@@ -46,7 +46,7 @@ const Photo = styled.img`
 
     margin-left: auto;
     margin-right: auto:
-    max-height: 90vh;
+    max-height: 100vh;
 `
 
 
