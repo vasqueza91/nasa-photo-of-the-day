@@ -59,7 +59,7 @@ const Photo = styled.img`
 
 return (
     <Container>
-        <Title>Welcome To The Nasa Photo Of The Day</Title>
+        <Title>Welcome To The Nasa Photo Of The Day!</Title>
         {photoData.media_type === "image" ? (
         <Photo src={photoData.url} alt={photoData.title}/>
         ) : (
