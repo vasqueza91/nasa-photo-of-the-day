@@ -16,7 +16,7 @@ function NasaPhoto() {
         console.log(err)
     })
 
-}, [], )
+}, [])
 
 const Container = styled.div`
     display: flex
@@ -24,15 +24,20 @@ const Container = styled.div`
     justify-content: center;
     vertical-align: bottom;
     text-align: center;
-    background-color: grey;
+    background-image: url(https://cdn.mos.cms.futurecdn.net/iuWB2NM48R2r9q7QhyJfhe.jpg);
     min-height: 100vh;
     margin-left: auto;
     margin-right: auto:
     padding: 25%
 `
 
+const Title = styled.h1`
+color: white;
+
+`
+
 const Paragraph = styled.p`
-    color: blue;
+    color: White;
     padding 15px;
     border-style: solid;
     border-color: red;
@@ -54,6 +59,7 @@ const Photo = styled.img`
 
 return (
     <Container>
+        <Title>Welcome To The Nasa Photo Of The Day</Title>
         {photoData.media_type === "image" ? (
         <Photo src={photoData.url} alt={photoData.title}/>
         ) : (
